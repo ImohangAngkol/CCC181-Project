@@ -1,0 +1,57 @@
+:root {
+  --container: 1100px;
+
+  /* Palette */
+  --blue-50: #eaf5ff;
+  --blue-200: #b7ddff;
+  --blue-600: #2684ff; /* Primary blue (modern) */
+  --blue-700: #1d6fe0;
+
+  --gray-50: #f7f8fa;
+  --gray-100: #eef1f4;
+  --gray-200: #dde3ea;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-700: #334155;
+
+  --white: #ffffff;
+
+  /* Surfaces */
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --footer-bg: #f7f8fa;
+  --footer-text: #334155;
+
+  /* Elements */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-muted: #e2e8f0;
+  --card-bg: #ffffff;
+  --btn-bg: #f1f5f9;
+  --btn-bg-hover: #e2e8f0;
+  --input-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  background: var(--gray-50);
+  color: var(--text-primary);
+}
+
+.app {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app-header, .app-main, .app-footer {
+  width: 100%;
+}

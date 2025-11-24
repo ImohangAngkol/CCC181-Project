@@ -1,0 +1,33 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.star.filled {
+  color: var(--blue-600);
+}
+
+.star:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.rating-text {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.rating.sm .star { font-size: 16px; }
+.rating.md .star { font-size: 20px; }
+.rating.lg .star { font-size: 26px; }

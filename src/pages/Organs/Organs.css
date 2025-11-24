@@ -1,0 +1,68 @@
+.organs {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 28px 22px;
+}
+
+.organs-header {
+  margin-bottom: 16px;
+}
+
+.muted {
+  color: var(--text-secondary);
+}
+
+.organs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.organ-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-muted);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.badge {
+  background: var(--blue-50);
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.desc {
+  margin: 10px 0 14px;
+  color: var(--text-secondary);
+}
+
+.parts h4 {
+  margin-bottom: 8px;
+}
+
+.parts ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.rate-row {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.saving {
+  color: var(--text-secondary);
+  font-size: 12px;
+}

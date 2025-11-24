@@ -1,0 +1,15 @@
+.theme-toggle {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border-muted);
+  background: var(--btn-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  background: var(--btn-bg-hover);
+}
