@@ -1,0 +1,32 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.stars {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+.star-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.star-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--border);
+}
+.star-btn.filled .star-icon {
+  color: var(--link);
+}
+.rating-meta {
+  display: inline-flex;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+.rating-meta .avg {
+  font-weight: 700;
+  color: var(--text);
+}

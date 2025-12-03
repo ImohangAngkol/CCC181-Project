@@ -1,0 +1,7 @@
+.form-section {
+  margin-top: 1rem;
+}
+.swap-form {
+  display: grid;
+  gap: 0.8rem;
+}

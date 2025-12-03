@@ -1,0 +1,33 @@
+/* Theme variables using CSS custom properties
+   Palette: Gray #808080, Black #000000, White #FFFFFF, Blue #1E90FF */
+
+:root {
+  --color-gray: #808080;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-accent: #1E90FF;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+  /* Light theme defaults */
+  --bg: var(--color-white);
+  --text: #111111;
+  --muted: #555555;
+  --border: #e5e7eb;
+  --card-bg: #f9fafb;
+  --link: var(--color-accent);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #f5f5f5;
+  --muted: #c9c9c9;
+  --border: #1f2937;
+  --card-bg: #161616;
+  --link: #6cb6ff; /* softer blue in dark */
+}
+
+/* Smooth theme transitions */
+* {
+  transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease;
+}
